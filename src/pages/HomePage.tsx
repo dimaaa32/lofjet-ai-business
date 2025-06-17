@@ -154,7 +154,7 @@ const HomePage = () => {
                   style={{ height: '2300px' }}
                 >
                   <img 
-                    src="/src/ChatGPT Image 17 июн. 2025 г., 13_23_35.png"
+                    src="/images/1.png"
                     alt="AI Revenue Engine Visualization"
                     style={{ width: '100%', height: '2300px', objectFit: 'contain', objectPosition: 'center' }}
                   />
@@ -208,7 +208,7 @@ const HomePage = () => {
                         transition={{ duration: 0.3 }}
                       >
                         <img 
-                          src="/src/ChatGPT Image 17 июн. 2025 г., 13_23_35 (3).png"
+                          src="/images/2.png"
                           alt="AI Revenue Engine Visualization"
                           className="w-full h-full object-cover object-center"
                           style={{ 
@@ -268,33 +268,6 @@ const HomePage = () => {
                     ease: "easeInOut"
                   }}
                 />
-
-                {/* Mobile-specific floating notification */}
-                <motion.div 
-                  className="absolute -top-3 -right-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-2 rounded-lg shadow-lg text-xs font-bold"
-                  animate={{
-                    y: [0, -3, 0],
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                >
-                  ✨ AI Powered
-                </motion.div>
-
-                {/* Mobile stats overlay */}
-                <motion.div 
-                  className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2 text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 1.2 }}
-                >
-                  <div className="text-primary-400 font-bold text-sm">24/7 Active</div>
-                  <div className="text-white text-xs">Revenue Engine</div>
-                </motion.div>
               </div>
             </motion.div>
           </div>
