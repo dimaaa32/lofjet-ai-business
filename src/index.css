@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply text-secondary-800 bg-secondary-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-secondary-900 font-display;
+    text-wrap: balance;
+  }
+
+  /* Improve focus visibility */
+  *:focus {
+    outline: 2px solid #7B5CFF;
+    outline-offset: 2px;
+  }
+
+  /* Better button focus */
+  button:focus,
+  a:focus {
+    outline: 2px solid #7B5CFF;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(123, 92, 255, 0.1);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-primary-500;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-glow transition-all duration-300;
+  }
+  
+  .input {
+    @apply w-full px-4 py-3 rounded-lg border border-secondary-200 focus:outline-none focus:ring-2 focus:ring-primary-400 bg-white;
+    min-height: 44px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* Mobile-optimized grid */
+  .grid-mobile-responsive {
+    @apply grid grid-cols-1 gap-4;
+  }
+
+  @media (min-width: 640px) {
+    .grid-mobile-responsive {
+      @apply grid-cols-2 gap-6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-mobile-responsive {
+      @apply grid-cols-3 gap-8;
+    }
+  }
+
+  /* Touch-friendly navigation */
+  .nav-link {
+    @apply block py-3 px-4 text-base font-medium transition-colors duration-200;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  /* Mobile-first typography */
+  .text-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+  }
+  
+  .heading-responsive {
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+  }
+
+  .subheading-responsive {
+    font-size: clamp(1.125rem, 3.5vw, 1.5rem);
+  }
+}
+
+/* Aurora background animation */
+.aurora-bg {
+  @apply relative overflow-hidden;
+  background: linear-gradient(
+    to bottom right,
+    rgba(134, 119, 255, 0.1),
+    rgba(134, 119, 255, 0.05)
+  );
+}
+
+.aurora-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(134, 119, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: aurora 20s linear infinite;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  /* Improve tap targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better spacing */
+  .container-custom {
+    @apply px-4;
+  }
+
+  /* Improve form elements */
+  input, select, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    -webkit-appearance: none;
+    border-radius: 8px;
+  }
+
+  /* Better button states */
+  button:active, .btn:active {
+    transform: scale(0.98);
+  }
+
+  /* Improve readability */
+  p, li {
+    line-height: 1.6;
+  }
+
+  /* Better modal behavior */
+  .modal {
+    margin: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] {
+    font-size: 16px;
+  }
+}
+
+/* Improve tap highlighting */
+* {
+  -webkit-tap-highlight-color: rgba(123, 92, 255, 0.2);
+}
+
+/* Better scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 92, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* Safe area handling for devices with notches */
+@supports (padding: max(0px)) {
+  .safe-area-inset {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  /* Add dark mode styles if needed */
+}
+
+/* Performance optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Better text wrapping */
+.text-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
