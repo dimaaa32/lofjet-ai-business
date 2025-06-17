@@ -154,7 +154,7 @@ const HomePage = () => {
                   style={{ height: '2300px' }}
                 >
                   <img 
-                    src="assets/ChatGPT Image 17 июн. 2025 г., 13_23_35.png"
+                    src="/src/ChatGPT Image 17 июн. 2025 г., 13_23_35.png"
                     alt="AI Revenue Engine Visualization"
                     style={{ width: '100%', height: '2300px', objectFit: 'contain', objectPosition: 'center' }}
                   />
@@ -208,7 +208,7 @@ const HomePage = () => {
                         transition={{ duration: 0.3 }}
                       >
                         <img 
-                          src="assets/2.png"
+                          src="/src/ChatGPT Image 17 июн. 2025 г., 13_23_35 (3).png"
                           alt="AI Revenue Engine Visualization"
                           className="w-full h-full object-cover object-center"
                           style={{ 
