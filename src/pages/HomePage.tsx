@@ -381,7 +381,7 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <BenefitCard icon={<DollarSign className="h-8 w-8 text-green-400" />} title="Save $1K–$2K/month on payroll" delay={0} />
-            <BenefitCard icon={<TrendingUp className="h-8 w-8 text-blue-400" />} title="Close 5x more leads without hiring" delay={0.1} />
+            <BenefitCard icon={<TrendingUp className="h-8 w-8 text-blue-400" />} title="Close 2x more leads without hiring" delay={0.1} />
             <BenefitCard icon={<Zap className="h-8 w-8 text-yellow-400" />} title="Launch in days, not months" delay={0.2} />
             <BenefitCard icon={<Shield className="h-8 w-8 text-purple-400" />} title="Plug-and-play tools - no devs headaches" delay={0.3} />
             <BenefitCard icon={<Award className="h-8 w-8 text-orange-400" />} title="Results in 30 days - or full refund" delay={0.4} />
