@@ -294,9 +294,9 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <ResultCard number="+25%" title="Average Sales Increase" delay={0} />
-            <ResultCard number="+40%" title="Click-Through Rates" delay={0.1} />
-            <ResultCard number="+60%" title="More Leads with Our Stack" delay={0.2} />
-            <ResultCard number="80%" title="of Inquiries Automated" delay={0.3} />
+            <ResultCard number="+38%" title="Click-Through Rates" delay={0.1} />
+            <ResultCard number="+46%" title="More Leads with Our Stack" delay={0.2} />
+            <ResultCard number="66%" title="of Inquiries Automated" delay={0.3} />
             <ResultCard number="30 Days" title="or Your Money Back" delay={0.4} />
           </div>
         </div>
