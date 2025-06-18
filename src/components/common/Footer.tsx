@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <JetLogoFooter />
             <p className="text-secondary-300 mb-4">
-              Automate the grind. Multiply the money. Unleash your 24/7 sales army.
+              Automate the grind. Multiply the money. Unleash your 24/7 sales engine.
             </p>
         
           </div>
