@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 const JetLogo = ({ className = "h-12 w-12", textClassName = "text-2xl" }) => {
   return (
     <div className="flex items-center">
-    <Plane className="h-8 w-8 text-primary-400" />
       <motion.span 
         className={`font-display font-bold ${textClassName} text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-cyan-400`}
         
