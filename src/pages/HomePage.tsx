@@ -112,7 +112,7 @@ const HomePage = () => {
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-300 to-gray-100">
-                  Fast growth. Smooth scale. Zero turbulence
+                  Fast growth. Smooth scaling. Zero turbulence
                 </span>
               </motion.p>
       
