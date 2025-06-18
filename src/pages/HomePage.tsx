@@ -129,7 +129,7 @@ const HomePage = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-600/50 to-cyan-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative flex items-center">
                     <motion.div className="mr-3"><Sparkles className="h-6 w-6 sm:h-7 sm:w-7" /></motion.div>
-                    <span className="whitespace-nowrap">Build My Revenue Engine</span>
+                    <span className="whitespace-nowrap">Get My Free Strategy & Demo</span>
                     <ArrowRight className="h-6 w-6 sm:h-7 sm:w-7 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   <div className="absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -285,7 +285,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-[1.1]">
-              Launch in Days, Dominate for Years
+              Replace Your Team With a Stack That Sells
             </h2>
             <p className="text-2xl font-bold text-[#845AFF] mb-4 leading-[1.2]">
               You win or we work for free. Simple math.
