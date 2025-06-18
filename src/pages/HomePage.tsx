@@ -156,7 +156,7 @@ const HomePage = () => {
                   <img 
                     src="/images/1.png"
                     alt="AI Revenue Engine Visualization"
-                    style={{ width: '100%', height: '2300px', objectFit: 'contain', objectPosition: 'center' }}
+                    style={{ width: '100%', height: '2400px', objectFit: 'contain', objectPosition: 'center' }}
                   />
                 </motion.div>
               </div>
@@ -285,7 +285,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-[1.1]">
-              You Automate the Grind, They Burn Out the Team
+              Launch in Days, Dominate for Years
             </h2>
             <p className="text-2xl font-bold text-[#845AFF] mb-4 leading-[1.2]">
               You win or we work for free. Simple math.
