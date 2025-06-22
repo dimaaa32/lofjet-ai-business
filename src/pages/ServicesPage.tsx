@@ -39,11 +39,6 @@ const JetLogoServices = () => {
       <Zap className="h-12 w-12 text-primary-400 mr-4" />
       <motion.span
         className="font-display font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#845AFF] to-purple-400"
-      whileHover={{ 
-          backgroundImage: "linear-gradient(to right, #00D4FF, #7B5CFF, #00D4FF)",
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
         
         SERVICES
       </motion.span>
