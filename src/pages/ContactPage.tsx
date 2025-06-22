@@ -558,7 +558,7 @@ const ContactPage: React.FC = () => {
                 <div 
                   className="calendly-inline-widget" 
                   data-url="https://calendly.com/dimitriirozhkov/15-minute-call" 
-                  style={{ minWidth: '290px', height: '830px' }}
+                  style={{ minWidth: '100%', height: window.innerWidth <= 768 ? '600px' : '830px' }}
                 ></div>
               </div>
             </motion.div>
