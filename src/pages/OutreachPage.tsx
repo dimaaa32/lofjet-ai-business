@@ -263,7 +263,7 @@ const OutreachPage: React.FC = () => {
             />
             
             <ProofCard 
-              number="60%"
+              number="45%"
               title="More Leads with AI outreach"
               icon={<Target className="h-8 w-8 text-green-400" />}
               delay={0.1}
