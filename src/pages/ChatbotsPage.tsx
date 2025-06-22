@@ -131,7 +131,7 @@ const ChatbotsPage: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ProofCard 
-              number="5x"
+              number="3x"
               title="Higher Conversions"
               subtitle="Sideshow Case Study"
               delay={0}
@@ -170,7 +170,7 @@ const ChatbotsPage: React.FC = () => {
               What Our Chatbots Do
             </h2>
             <p className="text-xl text-primary-200 max-w-3xl mx-auto">
-              SIx powerful ways AI chatbots transform your business.
+              Six powerful ways AI chatbots transform your business.
             </p>
           </motion.div>
           
