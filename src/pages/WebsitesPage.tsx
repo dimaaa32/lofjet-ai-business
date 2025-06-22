@@ -491,23 +491,30 @@ const WebsitesPage: React.FC = () => {
               description="Product, service, or brand - we turn it into a sales machine."
               delay={0}
             />
+
+              <ProcessStep 
+              number="2"
+              title="We Build You a Free AI Demo Site"
+              description="See it before you say yes. Real pages, real design, no guesswork."
+              delay={0.1}
+            />
             
             <ProcessStep 
-              number="2"
+              number="3"
               title="We Design + Build It Fast"
               description="Every page is crafted to pull eyes down and wallets out."
               delay={0.1}
             />
             
             <ProcessStep 
-              number="3"
+              number="4"
               title="We Customize, Test, and Refine"
               description="Perfect every detail for conversion."
               delay={0.2}
             />
             
             <ProcessStep 
-              number="4"
+              number="5"
               title="Site’s Live, Time to Scale"
               description="Launch once - let it convert forever."
               delay={0.3}
