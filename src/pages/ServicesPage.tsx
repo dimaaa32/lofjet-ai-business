@@ -40,9 +40,9 @@ const JetLogoServices = () => {
       <motion.span
         className="font-display font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#845AFF] to-purple-400"
         whileHover={{ 
-          backgroundImage: "linear-gradient(to right, #00D4FF, #845AFF, #00D4FF)",
+          backgroundImage: "linear-gradient(to right, #00D4FF, #7B5CFF, #00D4FF)",
         }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         SERVICES
       </motion.span>
