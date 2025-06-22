@@ -470,58 +470,54 @@ const WebsitesPage: React.FC = () => {
       </section>
       
       {/* How It Works Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="container-custom">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              How It Works
-            </h2>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <ProcessStep 
-              number="1"
-              title="Tell Us What You Sell"
-              description="Product, service, or brand - we turn it into a sales machine."
-              delay={0}
-            />
-
-              <ProcessStep 
-              number="2"
-              title="We Build You a Free AI Demo Site"
-              description="See it before you say yes. Real pages, real design, no guesswork."
-              delay={0.1}
-            />
-            
-            <ProcessStep 
-              number="3"
-              title="We Design + Build It Fast"
-              description="Every page is crafted to pull eyes down and wallets out."
-              delay={0.1}
-            />
-            
-            <ProcessStep 
-              number="4"
-              title="We Customize, Test, and Refine"
-              description="Perfect every detail for conversion."
-              delay={0.2}
-            />
-            
-            <ProcessStep 
-              number="5"
-              title="Site’s Live, Time to Scale"
-              description="Launch once - let it convert forever."
-              delay={0.3}
-            />
-          </div>
-        </div>
-      </section>
+    <section className="py-24 bg-gradient-to-br from-blue-50 to-purple-50">
+  <div className="container-custom">
+    <motion.div 
+      className="text-center mb-16"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        How It Works
+      </h2>
+    </motion.div>
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <ProcessStep 
+        number="1"
+        title="Tell Us What You Sell"
+        description="Product, service, or brand - we turn it into a sales machine."
+        delay={0}
+      />
+      <ProcessStep 
+        number="2"
+        title="We Build You a Free AI Demo Site"
+        description="See it before you say yes. Real pages, real design, no guesswork."
+        delay={0.1}
+      />
+      <ProcessStep 
+        number="3"
+        title="We Design + Build It Fast"
+        description="Every page is crafted to pull eyes down and wallets out."
+        delay={0.2}
+      />
+      <ProcessStep 
+        number="4"
+        title="We Customize, Test, and Refine"
+        description="Perfect every detail for conversion."
+        delay={0.3}
+      />
+      <ProcessStep 
+        number="5"
+        title="Site’s Live, Time to Scale"
+        description="Launch once - let it convert forever."
+        delay={0.4}
+      />
+    </div>
+  </div>
+</section>
       
       {/* Final CTA Section */}
       <section className="relative py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden">
