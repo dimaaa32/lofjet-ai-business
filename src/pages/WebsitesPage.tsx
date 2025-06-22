@@ -102,7 +102,7 @@ const WebsitesPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-             AI-powered, UX-obsessed, and optimized to drive conversions from day one.
+             See your site first. Pay nothing.
             </motion.p>
             
             <motion.div 
@@ -116,7 +116,7 @@ const WebsitesPage: React.FC = () => {
                 className="group px-10 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 flex items-center"
               >
                 <Sparkles className="h-6 w-6 mr-3 group-hover:animate-pulse" />
-               Get Your Free Site Preview
+               Get Your Free Website Build
                 <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" />
               </Link>
               
