@@ -167,7 +167,7 @@ const VoiceAgentsPage: React.FC = () => {
             />
             
             <ImpactCard 
-              number="30%"
+              number="35%"
               title="Faster Conversions"
               subtitle="than human agents"
               delay={0.1}
