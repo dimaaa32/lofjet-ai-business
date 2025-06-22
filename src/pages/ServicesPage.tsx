@@ -36,90 +36,9 @@ import {
 const JetLogoServices = () => {
   return (
     <div className="flex items-center justify-center mb-8">
-      <motion.div 
-        className="relative h-16 w-16 mr-4"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
-        {/* Jet SVG for Services */}
-        <svg viewBox="0 0 48 48" className="w-full h-full">
-          <defs>
-            <linearGradient id="jetGradientServices" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#845AFF" />
-              <stop offset="50%" stopColor="#7B5CFF" />
-              <stop offset="100%" stopColor="#9D7BFF" />
-            </linearGradient>
-            <linearGradient id="thrustGradientServices" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#00D4FF" />
-              <stop offset="50%" stopColor="#0EA5E9" />
-              <stop offset="100%" stopColor="#845AFF" />
-            </linearGradient>
-            <filter id="glowServices">
-              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-              <feMerge> 
-                <feMergeNode in="coloredBlur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-          
-          {/* Jet Body */}
-          <path 
-            d="M8 24 L32 20 L40 24 L32 28 L8 24 Z" 
-            fill="url(#jetGradientServices)" 
-            filter="url(#glowServices)"
-          />
-          
-          {/* Jet Wings */}
-          <path 
-            d="M16 20 L24 16 L28 20 L24 24 L16 20 Z" 
-            fill="url(#jetGradientServices)" 
-            opacity="0.8"
-          />
-          <path 
-            d="M16 28 L24 24 L28 28 L24 32 L16 28 Z" 
-            fill="url(#jetGradientServices)" 
-            opacity="0.8"
-          />
-          
-          {/* Jet Nose */}
-          <circle cx="40" cy="24" r="3" fill="url(#jetGradientServices)" />
-          
-          {/* Thrust/Exhaust */}
-          <motion.path 
-            d="M8 24 L2 22 L2 26 L8 24 Z" 
-            fill="url(#thrustGradientServices)"
-            animate={{
-              opacity: [0.6, 1, 0.6],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          />
-          
-          {/* Speed Lines */}
-          <motion.g
-            animate={{
-              x: [0, -5, 0],
-              opacity: [0.3, 0.8, 0.3],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          >
-            <line x1="12" y1="20" x2="6" y2="19" stroke="#00D4FF" strokeWidth="1" opacity="0.6" />
-            <line x1="12" y1="24" x2="4" y2="24" stroke="#00D4FF" strokeWidth="1.5" opacity="0.8" />
-            <line x1="12" y1="28" x2="6" y2="29" stroke="#00D4FF" strokeWidth="1" opacity="0.6" />
-          </motion.g>
-        </svg>
-      </motion.div>
       
       <motion.span 
+        <Target className="h-12 w-12 text-primary-400 mr-4" />
         className="font-display font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#845AFF] to-purple-400"
         whileHover={{ 
           backgroundImage: "linear-gradient(to right, #00D4FF, #845AFF, #00D4FF)",
