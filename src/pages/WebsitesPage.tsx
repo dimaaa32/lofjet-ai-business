@@ -499,8 +499,8 @@ const WebsitesPage: React.FC = () => {
       />
       <ProcessStep 
         number="3"
-        title="We Design + Build It Fast"
-        description="Every page is crafted to pull eyes down and wallets out."
+        title="We Turn the Demo Into a Sales-Ready Site"
+        description="From demo to done - fast, clean, and built to sell."
         delay={0.2}
       />
       <ProcessStep 
