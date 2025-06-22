@@ -36,7 +36,7 @@ import {
 const JetLogoServices = () => {
   return (
     <div className="flex items-center justify-center mb-8">
-      <Zap className="h-12 w-12 text-primary-400 mr-4" />
+      <Bot className="h-12 w-12 text-primary-400 mr-4" />
       <motion.span
         className="font-display font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#845AFF] to-purple-400"
         
