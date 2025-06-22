@@ -215,7 +215,7 @@ const ServicesPage: React.FC = () => {
               description="We use AI to craft the perfect message for every lead, so replies skyrocket."
               features={[
                 "1,000s of personalized messages",
-                "Boost response rates by 40%+",
+                "Boost response rates by 33%+",
                 "Multi-channel outreach",
                 "Smart follow-up sequences"
               ]}
@@ -272,7 +272,7 @@ Built with buyer psychology and revenue in mind."
             />
             
             <NumberCard 
-              number="60%"
+              number="45%"
               unit="More"
               description="leads via AI-powered lead scraping"
               delay={0.1}
