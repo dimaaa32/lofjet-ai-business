@@ -534,7 +534,7 @@ const WebsitesPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-             Want to See Your Site—Before You Say Yes?
+             Want to See Your Site - Before You Say Yes?
             </motion.h2>
             
             <motion.p 
