@@ -116,7 +116,7 @@ const WebsitesPage: React.FC = () => {
                 className="group px-10 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 flex items-center"
               >
                 <Sparkles className="h-6 w-6 mr-3 group-hover:animate-pulse" />
-               Let's Build Your Site
+               Get Your Free Site Preview
                 <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" />
               </Link>
               
