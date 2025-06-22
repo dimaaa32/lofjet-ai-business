@@ -538,7 +538,7 @@ const WebsitesPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-             Want a High-Converting Site Live by Next Week?
+             Want to See Your Site—Before You Say Yes?
             </motion.h2>
             
             <motion.p 
@@ -548,7 +548,7 @@ const WebsitesPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              No tech stress. No delays. Just a site that closes.
+              We’ll build you a free demo website. No pressure. No tech headaches. Just see what’s possible.
             </motion.p>
             
             <motion.div 
@@ -563,7 +563,7 @@ const WebsitesPage: React.FC = () => {
                 className="group px-12 py-5 rounded-xl bg-white text-blue-600 hover:bg-gray-100 font-bold text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center"
               >
                 <Rocket className="h-7 w-7 mr-4 group-hover:animate-pulse" />
-                Build My Site Now
+                Start My Free Build
                 <ArrowRight className="h-7 w-7 ml-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
