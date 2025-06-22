@@ -21,18 +21,66 @@
     text-wrap: balance;
   }
 
-  /* Improve focus visibility */
+  /* Remove all focus outlines */
   *:focus {
-    outline: 2px solid #7B5CFF;
-    outline-offset: 2px;
+    outline: none !important;
+    box-shadow: none !important;
   }
 
-  /* Better button focus */
+  /* Remove focus outlines from all interactive elements */
   button:focus,
-  a:focus {
-    outline: 2px solid #7B5CFF;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 4px rgba(123, 92, 255, 0.1);
+  a:focus,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  [role="button"]:focus,
+  [tabindex]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+  }
+
+  /* Remove focus-visible outlines as well */
+  *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove any Tailwind focus styles */
+  .focus\:outline-none:focus {
+    outline: none !important;
+  }
+
+  .focus\:ring-0:focus {
+    box-shadow: none !important;
+  }
+
+  .focus\:ring-2:focus {
+    box-shadow: none !important;
+  }
+
+  .focus\:ring-primary-400:focus {
+    box-shadow: none !important;
+  }
+
+  /* Remove webkit focus styles */
+  button::-moz-focus-inner {
+    border: 0;
+    outline: none;
+  }
+
+  input::-moz-focus-inner {
+    border: 0;
+    outline: none;
   }
 }
 
@@ -45,12 +93,16 @@
     @apply px-6 py-3 rounded-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1;
     min-height: 44px;
     touch-action: manipulation;
+    outline: none !important;
+    box-shadow: none !important;
   }
   
   .btn-secondary {
     @apply px-6 py-3 rounded-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1;
     min-height: 44px;
     touch-action: manipulation;
+    outline: none !important;
+    box-shadow: none !important;
   }
   
   .section-title {
@@ -62,9 +114,17 @@
   }
   
   .input {
-    @apply w-full px-4 py-3 rounded-lg border border-secondary-200 focus:outline-none focus:ring-2 focus:ring-primary-400 bg-white;
+    @apply w-full px-4 py-3 rounded-lg border border-secondary-200 bg-white;
     min-height: 44px;
     font-size: 16px; /* Prevents zoom on iOS */
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #7B5CFF !important;
   }
 
   /* Mobile-optimized grid */
@@ -89,6 +149,7 @@
     @apply block py-3 px-4 text-base font-medium transition-colors duration-200;
     min-height: 44px;
     touch-action: manipulation;
+    outline: none !important;
   }
 
   /* Mobile-first typography */
@@ -136,6 +197,7 @@
   button, a, input, select, textarea {
     min-height: 44px;
     min-width: 44px;
+    outline: none !important;
   }
 
   /* Better spacing */
@@ -148,6 +210,7 @@
     font-size: 16px; /* Prevents zoom on iOS */
     -webkit-appearance: none;
     border-radius: 8px;
+    outline: none !important;
   }
 
   /* Better button states */
@@ -187,6 +250,7 @@
   input[type="tel"],
   input[type="color"] {
     font-size: 16px;
+    outline: none !important;
   }
 }
 
