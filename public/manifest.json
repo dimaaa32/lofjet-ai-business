@@ -1,13 +1,19 @@
 {
   "name": "LOFJET - AI Automation Agency",
   "short_name": "LOFJET",
-  "description": "AI automation agency specializing in chatbot development for niche industries. Transform your business with AI chatbots that sell 24/7.",
+  "description": "AI automation agency specializing in sales systems. From chatbots to voice callers to lead gen - our bots sell 24/7 so you don’t have to.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0F0F1A",
   "theme_color": "#7B5CFF",
   "orientation": "portrait-primary",
   "icons": [
+    {
+      "src": "/32-Photoroom.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/icon-192x192.png",
       "sizes": "192x192",
